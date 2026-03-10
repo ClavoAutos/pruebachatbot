@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prueba de Bot</title>
-
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
+      background: #f3f4f6;
     }
 
-    header {
+    .page-header {
       background: #0f172a;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 32px 20px;
     }
 
-    main {
-      padding: 40px;
+    .page-body {
       text-align: center;
+      padding: 40px 20px;
     }
 
-    #aless-chat iframe {
+    #aless-chat > iframe {
       border-radius: 16px;
       display: block;
       position: fixed;
@@ -33,38 +33,34 @@
       width: 255px;
       height: 95px;
       max-height: 100%;
+      opacity: 1;
+      color-scheme: none;
       background: transparent;
+      margin: 0px;
       max-width: 100vw;
+      transform: translateY(0px);
+      transition: none 0s ease 0s !important;
+      visibility: visible;
       z-index: 999999999 !important;
-      border: none;
+      border: 0;
     }
   </style>
 </head>
 
 <body>
-
-  <header>
+  <div class="page-header">
     <h1>Prueba de Bot</h1>
     <p>Entorno de prueba para integración del chatbot</p>
-  </header>
-
-  <main>
-    <h2>Panel de prueba</h2>
-    <p>Aquí puedes probar el comportamiento del bot integrado.</p>
-  </main>
-
-  <!-- Chatbot -->
-  <div id="app"></div>
-
-  <div id="aless-chat">
-    <iframe>
-    </iframe>
   </div>
 
-  <!-- Estilos y scripts del bot -->
-  <link rel="stylesheet" href="https://ddki3i9c6wrhr.cloudfront.net/chatbot-client/v1.4.0/aless-style.css"/> 
-  <script src="https://ddki3i9c6wrhr.cloudfront.net/chatbot-client/clients/6a3470b5-e4b2-4211-909e-8d201ad0e70c/0197648d-c2bf-73cd-b20f-481477d4f670/const-1763059861846.js"></script>
-  <script src="https://ddki3i9c6wrhr.cloudfront.net/chatbot-client/v1.4.0/aless-script.js"></script> 
+  <div class="page-body">
+    <h2>Panel de prueba</h2>
+    <p>Aquí puedes probar el comportamiento del bot integrado.</p>
+  </div>
 
+  <div id="aless-chat">
+    <iframe src="mycredimedia_client.html" frameborder="0"></iframe>
+  </div>
 </body>
+
 </html>
